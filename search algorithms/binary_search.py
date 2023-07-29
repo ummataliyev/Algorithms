@@ -3,15 +3,15 @@ def binary_search(arr, item):
     high = len(arr) - 1
 
     while low <= high:
-        mid = (low + high) // 2
-        guess = arr[mid]
+        middle = (low + high) // 2
+        guess = arr[middle]
 
         if guess == item:
-            return mid
+            return middle
         elif guess > item:
-            high = mid - 1
+            high = middle - 1
         else:
-            low = mid + 1
+            low = middle + 1
 
     return None
 
